@@ -270,6 +270,7 @@ export default {
       ex1: "",
       ex2: "",
       ex3: "",
+      ex4: "",
       hidden1: "hidden",
       hidden2: "hidden",
       hidden3: "hidden",
