@@ -19,7 +19,7 @@
           <p>
             从数学角度考虑，麻将其实是一个概率游戏。按照每一手的取舍来排列组合，组成胜利的方程式。
           </p>
-          <img src="../assets/ma.jpg" alt="" />
+          <img src="@dd/ma.jpg" alt="" />
           <i class="alt">[ 胜利的方程式 ]</i>
         </li>
         <li>
