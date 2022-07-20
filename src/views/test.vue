@@ -1,6 +1,7 @@
 <template>
   <div>
     <h3>v1.0</h3>
+    <p>testb分支添加</p>
     <el-form ref="form" :model="formData" :rules="rules" label-width="80px">
       <el-form-item label="注册资本" prop="registCaptial">
         <el-input
