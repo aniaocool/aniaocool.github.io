@@ -1,6 +1,7 @@
 <template>
   <div>
     <h3>v1.0</h3>
+    <h4>v1.0后续开发后续开发</h4>
     <el-form ref="form" :model="formData" :rules="rules" label-width="80px">
       <el-form-item label="注册资本" prop="registCaptial">
         <el-input
