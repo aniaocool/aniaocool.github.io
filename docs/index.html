@@ -1,1 +1,76 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/element-ui@2.15.7/lib/theme-chalk/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@smallwei/avue@2.9.5/lib/index.css"><link rel="stylesheet" href="/css/home.css"><title>aniao表单设计器</title><link href="/js/chunk-2d2308b7.2658357f.js" rel="prefetch"><link href="/js/app.15987c3e.js" rel="preload" as="script"><link href="/js/chunk-vendors.5f337c78.js" rel="preload" as="script"></head><body><noscript><strong>很抱歉，如果没有 JavaScript 支持，表单设计器 将不能正常工作。请启用浏览器的 JavaScript 然后继续。</strong></noscript><div id="app"><div class="avue-home"><div class="avue-home__main"><img class="avue-home__loading" src="./img/loading-spin.svg" alt="loading"><div class="avue-home__title">正在加载资源</div><div class="avue-home__sub-title">初次加载资源可能需要较多时间 请耐心等待</div></div></div></div><script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" charset="utf-8"></script><script src="https://cdn.jsdelivr.net/npm/element-ui@2.15.7/lib/index.js" charset="utf-8"></script><script src="https://cdn.jsdelivr.net/npm/@smallwei/avue@2.9.5" charset="utf-8"></script><script src="https://cdn.jsdelivr.net/npm/axios@0.18.1/dist/axios.min.js" charset="utf-8"></script><script src="https://webapi.amap.com/maps?v=1.4.11&key=a40c6d547150ac9c43cc17cc0a95f324&plugin=AMap.PlaceSearch"></script><script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script><script src="https://cdn.jsdelivr.net/npm/sortablejs@1.13.0/Sortable.min.js"></script><script src="/js/chunk-vendors.5f337c78.js"></script><script src="/js/app.15987c3e.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- 引入element-ui样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+  <div id="app"></div>
+  
+  <script>
+    window.$docsify = {
+      name: 'rise',
+      repo: '',
+      loadSidebar: true, //侧边菜单栏
+      subMaxLevel: 2, //侧边栏同时开启目录功能
+      auto2top: true, //切换页面后自动跳转到页面顶部
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      //全局
+      vueGlobalOptions: {
+        data() {
+          return {
+            msg: 'i am msg',
+            title: '我是标题',
+          };
+        },
+        mounted(){
+          console.log('111')
+        }
+      },
+      //指定(若指定，上面全局会失效)
+      // vueMounts: {
+      //   '#counter': {
+      //     data() {
+      //       return {
+      //         msg: 'i am counter',
+      //       };
+      //     },
+      //   },
+      //   '#main': {
+      //     data() {
+      //       return {
+      //         msg: 'i am main',
+      //       };
+      //     },
+      //   },
+      // },
+      // 搜索
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: '搜索',
+        noData: '找不到结果',
+        depth: 2, // 搜索标题的最大层级, 1 - 6
+        hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+        pathNamespaces: ['/menu', '/']
+      }
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- 引入element-ui -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</body>
+</html>
