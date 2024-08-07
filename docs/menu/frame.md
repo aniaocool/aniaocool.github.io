@@ -1,10 +1,12 @@
 # 架构
-<br>
-<img src="/images/main.png" alt="rise" title="rise架构设计" style="width:100%;max-width:802px;" />
+
+---
+
+<img src="/images/frame.drawio.svg" alt="rise" title="rise架构设计" style="width:100%;max-width:800px;" />
 
 ### 项目结构
 
-``` text
+```text
 packages
   ├─assets          //资源
   ├─components      //组件
